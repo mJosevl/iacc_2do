@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Glosario</title>
+</head>
+
+<body>
+    <header class="p-3 mb-2 bg-info text-white">
+        <a href="#">Inicio</a>
+    </header>
+    <main>
+        <div class="container mt-5">
+             <div>
+                <h1 class="mb-4">Glosario de Conceptos Básicos de HTML</h1>
+                <h2>1. Etiquetas HTML</h2>
+                <p>Las etiquetas HTML son elementos fundamentales para construir contenido en una página web.
+                    Estas etiquetas definen la estructura y el estilo del contenido que se muestra
+                    en un navegador web. Cada etiqueta tiene una apertura ("<nombre>") y un cierre ("</nombre>") que
+                    envuelven
+                    el contenido.</p>
+    
+             </div>
+             <div>
+                <h2>2. Hiperenlaces</h2>
+                <p>Los hiperenlaces, también conocidos como enlaces o links, son elementos que permiten la navegación entre
+                    páginas web. Se crean mediante la etiqueta &lt;a&gt;. Para especificar la dirección del enlace, se
+                    utiliza el atributo href, que contiene la URL de destino.</p>
+                <p>Ejemplo: &lt;a href="https://es.wikipedia.org/wiki/HTML"&gt;HTML en Wikipedia&lt;/a&gt;.</p>
+                 <p>El enlace a continuación:</p> <a href="/https://es.wikipedia.org/wiki/HTML">Concepto HTML</a>
+              
+             </div>
+             <div>
+                <h2>3. Listas</h2>
+                <p>Las listas organizan elementos relacionados en forma de ítems. HTML ofrece dos tipos principales: listas
+                    ordenadas (&lt;ol&gt;) y listas no ordenadas (&lt;ul&gt;). Cada ítem se define con la etiqueta
+                    &lt;li&gt;.</p>
+                    <h3>Principales Elementos de Lista en HTML</h3>
+
+                    <h2>Lista Desordenada (ul)</h2>
+                    <ul>
+                        <li>Elemento de lista 1 <span> Elemnto :<a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/li">li</a></span></li>
+                        <li>Elemento de lista 2</li>
+                        <li>Elemento de lista 3</li>
+                    </ul>
+                
+                    <h2>Lista Ordenada (ol)</h2>
+                    <ol>
+                        <li>Elemento de lista 1</li>
+                        <li>Elemento de lista 2</li>
+                        <li>Elemento de lista 3</li>
+                    </ol>
+                
+                    <h2>Lista de Definición (dl)</h2>
+                    <dl>
+                        <dt>Término 1</dt>
+                        <dd>Definición 1</dd>
+                        <dt>Término 2</dt>
+                        <dd>Definición 2</dd>
+                    </dl>
+             </div>
+             <div>
+                <h2>4. Tablas</h2>
+                <p>Las tablas se utilizan para organizar datos en filas y columnas. Se crean con la etiqueta &lt;table&gt;,
+                    y las filas se definen con &lt;tr&gt; y las celdas con &lt;td&gt;.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Elemento HTML</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;caption&gt;</td>
+                                <td>Etiqueta opcional que proporciona un título o descripción para la tabla.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;colgroup&gt;</td>
+                                <td>Etiqueta opcional para agrupar elementos &lt;col&gt; y aplicar estilos o atributos a columnas.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;thead&gt;</td>
+                                <td>Etiqueta opcional que contiene filas de encabezados de tabla.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tfoot&gt;</td>
+                                <td>Etiqueta que contiene filas de resumen o datos de pie de tabla.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tr&gt;</td>
+                                <td>Fila en la tabla que contiene celdas de datos o encabezados.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tbody&gt;</td>
+                                <td>Grupo de filas que contiene los datos principales de la tabla.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+             </div>
+
+             <div>
+                <h2>5. Elementos Multimedia</h2>
+                <p>Los elementos multimedia agregan interactividad y atractivo visual a las páginas web.</p>
+                <p><strong>Imágenes (&lt;img&gt;):</strong> Se utilizan para mostrar imágenes en una página.</p>
+                <img src="/semana2_pw/img/estructura-basica-de-una-pagina-web-en-html.jpg" alt="Imagen representativa">
+                <p><strong>Audios (&lt;audio&gt;):</strong> Permite reproducir archivos de audio.</p>
+                <audio controls>
+                    <source src="/semana2_pw/audio/atributos html.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <p><strong>Videos (&lt;video&gt;):</strong> Se emplea para incrustar videos.</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="/semana2_pw/video/Women_in_tech.mp4"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+             </div>
+    </main>
+    <footer>
+         <p class="p-3 mb-2 bg-info text-center text-white">Hecho por:MJoseVL  <span>Programacion Web I</span></p>
+    </footer>
+</body>
+
+</html>
