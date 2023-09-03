@@ -115,6 +115,10 @@ align-items: center;
   padding: 20px 0;
   text-align: center;
 }
+#encuesta {
+  max-width: 40vw; /* Ajusta este valor según tus preferencias */
+  margin: 0 auto; /* Centra el formulario en la página */
+}
 
 /* Estilo personalizado para el formulario compacto */
 .compact-form {
