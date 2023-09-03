@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+background-image: url(../images/banner.jpg);
+height: 15vh;
+display: flex;
+background-position: center;
+align-items: center;
+justify-content: center;
+}
+h1{
+    font-size: 1.5rem; 
+}
+nav{
+    background-color: rgb(35, 166, 35);
+    justify-content: center;
+    display: flex;
+}
+ header img{
+    width: 2rem;
+ }
+h2{
+  padding: 5px;
+}
+nav a{
+    background-color: black;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+main{
+   display: flex;
+    height: 70vh;
+    flex-direction: column;
+   }
+  /*TODO LO QUE ESTA EN EL MAIN*/
+
+  section .prod{
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* Estilos para la sección de productos */
+.prod {
+    display: flex; /* Hace que los productos se muestren en línea */
+    flex-wrap: wrap; /* Permite que los productos se muevan a la siguiente línea si el ancho de pantalla es insuficiente */
+    justify-content: center; /* Centra los productos horizontalmente */
+  /* Añade un fondo verde a la sección de productos */
+    padding: 5px; /* Añade un espacio interno de 20px */
+  }
+  
+  .products {
+    background-color:rgb(35, 166, 35); 
+    display: flex; /* Hace que la imagen y los textos se muestren en línea */
+    flex-direction: column; /* Alinea los textos debajo de la imagen */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin: 10px; /* Añade un margen de 10px alrededor de cada producto */
+  }
+  
+  .products img {
+    width: 150px; /* Establece el ancho de las imágenes en 200px */
+    height: auto; /* Ajusta automáticamente la altura para mantener la relación de aspecto */
+     margin-top: 10px;  
+     padding: 10px;
+}
+  
+  /* Estilos para la sección de suscripción */
+  .suscribe {
+    display: flex; /* Hace que la imagen y el texto se muestren en línea */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-top: 50px; /* Añade un margen superior de 50px */
+  }
+  .subscribe-container{
+    justify-content: space-around;
+  }
+
+
+  .suscribe img {
+    border-radius: 20px;
+    width: 300px; /* Establece el ancho de la imagen en 300px */
+    height: auto; /* Ajusta automáticamente la altura para mantener la relación de aspecto */
+   margin-right: 150px; /* Añade un margen derecho de 50px para separar la imagen del texto */
+  }
+  .product-container{
+    display: flex;
+
+  }
+  .subscribe-container{
+    display: flex;
+  }
+  footer {
+    margin-top: 10rem;
+    background-color: rgb(31, 159, 31);
+    height: 10vh;
+    color: black;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.mail{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilo personalizado para el formulario compacto */
+.compact-form {
+  padding: 10px;
+}
+
+/* Estilo personalizado para reducir el espaciado entre elementos del formulario */
+.compact-form .mb-3 {
+  margin-bottom: 5px;
+}
+/* Estilos para móviles */
+@media  only screen and (min-width:324px)and (max-width: 768px) {
+    header {
+      height: auto; /* La altura de la cabecera se ajustará automáticamente */
+    }
+    header{
+        background-image: url(../images/banner.jpg);
+        height: 10vh;
+        display: flex;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        }
+        h1{
+            font-size: 0.5rem; 
+        }
+        nav{
+            background-color: rgb(35, 166, 35);
+            justify-content: center;
+            display: flex;
+        }
+         header img{
+            width: 1rem;
+         }
+        
+        nav a{
+            background-color: black;
+            margin: 0.25rem;
+            text-decoration: none;
+            color: white;
+            padding: 2px;
+            font-size: 0.6rem;
+        }
+        main{
+           display: flex;
+            min-height: 65vh;
+            flex-direction: column;
+           }
+          /*TODO LO QUE ESTA EN EL MAIN*/
+        
+          section .prod{
+            min-height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          /* Estilos para la sección de productos */
+       
+          .products img {
+            width: 150px; /* Establece el ancho de las imágenes en 200px */
+            height: auto; /* Ajusta automáticamente la altura para mantener la relación de aspecto */
+             margin-top: 10px;  
+             padding: 10px;
+        }
+          
+          /* Estilos para la sección de suscripción */
+          .suscribe {
+            min-height: 20vh;
+            display: flex; 
+            
+          }
+        .subscribe-container{
+            min-height: 20vh;
+            margin-bottom: 5rem;
+        }
+        li{
+            font-size: 0.5rem;
+        }
+        .subscribe-container h4{
+            font-size: 0.8rem;
+        }
+        
+          .suscribe img {
+            border-radius: 20px;
+            width: 100px;  
+           margin-right: 50px; 
+          }
+          .product-container{
+            display: flex;
+            flex-direction: column;
+        
+          }
+         
+          footer {
+            background-color: rgb(69, 244, 215);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            background-color: rgb(69, 244, 215);
+            height: 10vh;
+            color: black;
+            padding: 20px;
+        font-size: 0.5rem;
+        
+        }
+        
+        .mail{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            font-size: 0.6rem;
+        }
+  }
+  
+  
+/* Estilos para tabletas */
+@media (min-width: 769px) and (max-width: 1023px) {
+    header {
+      height: 20vh; /* Ajusta la altura de la cabecera */
+    }
+  
+    nav a {
+      font-size: 0.8rem; /* Ajusta el tamaño de fuente de los enlaces */
+    }
+  
+    .products {
+      margin: 10px; /* Ajusta el margen de los productos */
+    }
+  
+    .products img {
+      width: 200px; /* Ajusta el ancho de la imagen */
+    }
+  
+    .suscribe {
+      margin-top: 30px; /* Ajusta el margen superior */
+    }
+  
+    .suscribe img {
+      width: 250px; /* Ajusta el ancho de la imagen */
+    }
+  }
+  /* Estilos para pantallas de escritorio */
+@media (min-width: 1024px) {
+}
+  
+  
