@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../images/banner.jpg);
+    height: 10vh;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 0.8rem;
+}
+
+nav {
+    background-color: rgb(35, 166, 35);
+    justify-content: center;
+    display: flex;
+}
+
+header img {
+    width: 1rem;
+}
+
+nav a {
+    background-color: black;
+    margin: 0.25rem;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 0.6rem;
+}
+
+main {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+}
+
+section .prod {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos para la sección de productos */
+.products img {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/* Estilos para la sección de suscripción */
+.suscribe {
+    min-height: 20vh;
+    display: flex;
+}
+
+.subscribe-container {
+    min-height: 20vh;
+    margin-bottom: 3rem;
+}
+
+li {
+    font-size: 0.5rem;
+}
+
+.subscribe-container h4 {
+    font-size: 0.8rem;
+}
+
+.suscribe img {
+    border-radius: 20px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(69, 244, 215);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgb(69, 244, 215);
+    height: 10vh;
+    color: black;
+    padding: 10px;
+    font-size: 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mail {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 0.6rem;
+}

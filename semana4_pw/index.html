@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./opcion1/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/semana4_pw/css/mobile.css">
+    <title>Farmacia</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+        <h1>FARMACIA MI SALUD -ARICA</h1>
+    </header>
+        <nav>
+            <ul>
+                <a href="#quienes_somos">Quiénes Somos</a>
+                <a href="#galeria">Galería</a>
+                <a href="#encuesta">Encuesta</a>
+            </ul>
+        </nav>
+    
+        <!-- Capa "Quiénes somos" -->
+        <section id="quienes_somos">
+            <h1>Quiénes Somos</h1>
+            <p>¡Bienvenidos a Farmacias Mi Salud! Somos una cadena de farmacias comprometida con la salud y el bienestar de nuestros clientes.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_u0bH9joTfgh" frameborder="0" allowfullscreen></iframe>
+        </section>
+    
+        <!-- Capa "Galería" -->
+        <h3 class="text-center"> Galería de productos</h3>
+            <section class="prod">
+              
+                <div class="product-container">
+                    <div class="products">
+                        <img class="" src="./opcion1/images/adermicina.jpg" alt="">
+                        <h4>Adermicina</h4>
+                       <p>$1200</p>
+                    </div>
+                    <div class="products">
+                        <img class="" src="./opcion1/images/caramelos.jpg" alt="">
+                        <h4>Caramelos</h4>
+                        <p>$1550</p>
+                    </div>
+                    <div class="products">
+                        <img class="" src="./opcion1/images/ibuprofeno.jpg" alt="">
+                        <h3>Ibuprofeno</h3>
+                       <p>$700</p>
+                    </div>
+                </div>
+            </section>
+        <!-- Capa "Encuesta" -->
+        <section id="encuesta">
+                    <h3 class="text-center">Formulario de encuesta</h3>
+                    <form action="procesar_encuesta.php" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
+                            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="sexo" class="form-label">Sexo:</label>
+                            <select class="form-select" id="sexo" name="sexo" required>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="antecedentes_salud" class="form-label">Antecedentes de salud:</label>
+                            <textarea class="form-control" id="antecedentes_salud" name="antecedentes_salud"
+                                rows="4"></textarea>
+                        </div>
+    
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+         
+        </section>
+    
+        <script>
+            // Código JavaScript para scroll suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+   
+</body>
+</html>
