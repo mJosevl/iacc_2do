@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compra </title>
+</head>
+
+    <body>
+        <div id="container">
+        <div id="main">
+        <?php require($_page.".php"); ?>
+        </div><!--end of main-->
+        <div id="sidebar">
+        </div><!--end of sidebar-->
+        <h1>Product List</h1>
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+<th>Action</th>
+</tr>
+<tr>
+<td>Product 1</td>
+<td>Some random description</td>
+<td>15 $</th>
+<td><a href="#">Add to cart</a></td>
+</tr>
+<tr>
+<td>Product 2</td>
+<td>Some random description</td>
+<td>25 $</th>
+<td><a href="#">Add to cart</a></td>
+</tr>
+</table>
+        </div><!--end container-->
+        <div>
+            <h1>View cart</h1>
+<a href="index.php?page=products">Go back to products page</a>
+<form method="post" action="index.php?page=cart">
+<table>
+<tr>
+<th>Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Items Price</th>
+</tr>
+        </div>
+        </body>
+
+</html>
