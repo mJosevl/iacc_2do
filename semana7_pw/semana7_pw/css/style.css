@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../img/juanf.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: rgb(231, 222, 222);
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #2f9d63;
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( 160deg, #d3eddf, #FFFB7D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+select{
+    border:0;
+    border-radius: 5px;
+    width: 30%;
+    padding:0.5rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+thead{
+    background-color: yellow;
+}
+table, th, td {
+    border: 1px solid black;
+    max-width: 75%;
+    margin-top: 1em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 45px;
+}
+.container_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(10, 11, 11);
+
+}
+.section2{
+    margin: 1vh;;
+    display: flex;
+    flex-direction: column;
+}
+li{
+   list-style-position: inside;
+}
+ul {
+    list-style-type: lower-roman;
+    justify-content: center;
+  }
+.content1{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    padding: 1em;
+    color: #85FFBD;
+ margin: 10px;
+ border-radius: 10px;
+ background-image: url(../img/jfpsection.jpg);
+}
+.content2{
+background-image: url(../img/jfpsection.jpg);
+ margin: 5px;
+ padding: 1em;
+ color: aliceblue;
+ color: #85FFBD;
+ border-radius: 10px;
+ background-size: cover;
+}
+h2{
+    color: rgb(225, 235, 227);
+    background-color: #2d493a;
+}
+.content3{
+background-image: url(../img/jfpsection.jpg);
+background-size: cover;
+margin: 5px;
+color: rgb(241, 246, 251);
+padding: 1em;
+color: #85FFBD;
+border-radius: 10px;
+}
+.turismo_tabla{
+    background-color: none;
+}
+.img_act{
+    max-width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+  
+footer {
+    display: flex;
+    background-color: rgb(82, 241, 106);
+    height: 15vh;
+color: black;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.mail{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+    li {
+        flex-basis: 100%;
+    }
+}
+/* Estilos para pantallas de tamaño medio (tablets, 768px y más) */
+@media only screen and (min-width: 768px) {
+    th, td {
+        padding: 20px;
+        flex-basis: 100%;
+    }
+}
+
+/* Estilos para pantallas grandes (desktops, 992px y más) */
+@media only screen and (min-width: 992px) {
+    th, td {
+        padding: 25px;
+    }
+}
